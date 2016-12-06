@@ -1,0 +1,98 @@
+.stitches-sprite(@x: 0, @y: 0, @width: 0, @height: 0) {
+  background-position: @x @y;
+  width: @width;
+  height: @height;
+}
+
+.sprite {
+  background-image: url('../img/base-sprite.png');
+  background-repeat: no-repeat;
+  display: block;
+  &.sprite_inline {
+    display: inline-block;
+  }
+
+  &.sprite-icon_adress {
+    .stitches-sprite(-5px, -5px, 32px, 42px);
+  }
+
+  &.sprite-icon_angle_arrow_right {
+    .stitches-sprite(-47px, -5px, 24px, 22px);
+  }
+
+  &.sprite-icon_arrow_left {
+    .stitches-sprite(-81px, -5px, 24px, 22px);
+  }
+
+  &.sprite-icon_baby_car {
+    .stitches-sprite(-115px, -5px, 73px, 82px);
+  }
+
+  &.sprite-icon_black_phone {
+    .stitches-sprite(-198px, -5px, 18px, 18px);
+  }
+
+  &.sprite-icon_char {
+    .stitches-sprite(-5px, -97px, 61px, 49px);
+  }
+
+  &.sprite-icon_clock {
+    .stitches-sprite(-198px, -33px, 45px, 45px);
+  }
+
+  &.sprite-icon_close {
+    .stitches-sprite(-198px, -88px, 30px, 29px);
+  }
+
+  &.sprite-icon_heart {
+    .stitches-sprite(-76px, -97px, 70px, 63px);
+  }
+
+  &.sprite-icon_house {
+    .stitches-sprite(-253px, -5px, 94px, 84px);
+  }
+
+  &.sprite-icon_pc {
+    .stitches-sprite(-238px, -99px, 71px, 64px);
+  }
+
+  &.sprite-icon_pencil {
+    .stitches-sprite(-5px, -173px, 42px, 68px);
+  }
+
+  &.sprite-icon_plus {
+    .stitches-sprite(-156px, -99px, 24px, 24px);
+  }
+
+  &.sprite-icon_red_mail {
+    .stitches-sprite(-57px, -173px, 55px, 57px);
+  }
+
+  &.sprite-icon_red_marker {
+    .stitches-sprite(-122px, -173px, 46px, 56px);
+  }
+
+  &.sprite-icon_red_phone {
+    .stitches-sprite(-178px, -173px, 55px, 55px);
+  }
+
+  &.sprite-icon_social_fb {
+    .stitches-sprite(-319px, -99px, 19px, 16px);
+  }
+
+  &.sprite-icon_social_inst {
+    .stitches-sprite(-226px, -5px, 14px, 14px);
+  }
+
+  &.sprite-icon_social_odn {
+    .stitches-sprite(-319px, -125px, 11px, 19px);
+  }
+
+  &.sprite-icon_social_tw {
+    .stitches-sprite(-319px, -154px, 18px, 15px);
+  }
+
+  &.sprite-icon_social_vk {
+    .stitches-sprite(-243px, -179px, 23px, 13px);
+  }
+}
