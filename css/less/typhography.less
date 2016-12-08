@@ -3,15 +3,16 @@
 @base_font: 'proximo_reg';
 @medium_font: 'proximo_bold';
 @light_font: 'proximo_light';
+@ultra_light_font: 'roboto_light';
 @hight_font: 'raleway_bold';
 @extra_font: 'raleway_black';
-
+@thin_font: 'roboto_thin';
 
 @baseFontSize: 16px;
 @smallFont: @baseFontSize - 2;
 @h1_size: @baseFontSize + 24;
 @h1_larg: @h1_size + 14;
-@h2_size: @h1_size - 8;
+@h2_size: @h1_size - 10;
 @h3_size: @h2_size - 10;
 @h4_size: @h3_size - 4;
 
@@ -19,34 +20,42 @@
 body {
   font-family: @base_font;
   font-size: @baseFontSize;
-  color: @black;
+  color: @textBlack;
 }
 a, span {
-  font-family: @smallFont;
+  font-size: @smallFont;
 }
 a {
-  text-decoration: none;
   color: @second_base_color;
+  &:hover {
+    color: @second_base_color;
+  }
 }
 
 h1,h2,h3,h4 {
   font-family: @medium_font;
-  &.hight {
+}
+.medium {
+  font-family: @medium_font;
+}
+  .hight {
     font-family: @hight_font;
   }
-  &.extra {
+  .extra {
     font-family: @extra_font;
   }
-  &.thin {
+  .thin {
     font-family: @thin_font;
   }
-  &.light {
+  .light {
     font-family: @light_font;
   }
-  &.regular {
-    font-family: @baseFontSize;
+  .regular {
+    font-family: @base_font;
   }
-}
+  .ultra_light {
+    font-family: @ultra_light_font;
+  }
 h1 {
   font-size: @h1_size;
   &.larg {
@@ -74,4 +83,7 @@ h4 {
 }
 .text_white {
   color: @white;
+}
+.up {
+  text-transform: uppercase;
 }

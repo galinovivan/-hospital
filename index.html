@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+    <script src="libs/fancybox/jquery.fancybox.js"></script>
+
+
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,9 +22,9 @@
         <div class="col-md-3">
             <div class="header_logo logo">
                 <div class="media">
-                    <div class="media-left">
+                    <a href="#" class="media-left">
                         <img src="img/header_logo.png" alt="logo" class="media-object" />
-                    </div>
+                    </a>
                     <div class="media-body">
                         <h1 class="hight">Клиникус</h1>
                     </div>
@@ -26,19 +33,32 @@
         </div>
         <div class="col-md-6">
             <ul class="base_nav">
-                <li class="sub_nav"><a href="#">Направления</a></li>
-                <li><a href="#">Услуги и цены</a></li>
-                <li><a href="#">Клиника</a></li>
-                <li><a href="#">Врачи</a></li>
-                <li><a href="#">КОнтакты</a></li>
+                <li class="sub_nav">
+                    <div class="nav_toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="category.html">Направления</a>
+                <ul class="sub_nav_body">
+                    <li><a href="#">Раздел</a></li>
+                    <li><a href="#">Раздел</a></li>
+                    <li><a href="#">Раздел</a></li>
+                    <li><a href="#">Раздел</a></li>
+                </ul>
+                </li>
+                <li><a href="price.html">Услуги и цены</a></li>
+                <li><a href="about.html">Клиника</a></li>
+                <li><a href="doctors.html">Врачи</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
             </ul>
         </div>
         <div class="col-md-3">
             <div class="header_contact">
                  <div class="row">
-                     <div class="col-md-6"><i class="sprite sprite-icon_black_phone sprite_inline"></i>+7(812) <stong>235-96-77</stong></div>
+                     <div class="col-md-6"><i class="sprite sprite-icon_black_phone sprite_inline mar_right_15"></i>+7(812) <strong class="medium">235-96-77</strong></div>
                      <div class="col-md-6">
-                         <a href="#appointmentsModal" data-toggle="modal" class="button base_color with_shadow">Записаться</a>
+                         <a href="#appointmentsModal" data-toggle="modal" class="button color_base with_shadow xs">Записаться</a>
                      </div>
                  </div>
             </div>
@@ -53,8 +73,8 @@
             <div class="col-md-9">
                 <div class="cover_content">
                     <h1 class="text_color_base">Многопрофильная</h1>
-                     <p class="great_size up">Клиника</p>
-                    <p class="great_size up">Здоровья</p>
+                     <p class="great_size up thin">Клиника</p>
+                    <p class="great_size up thin">Здоровья</p>
                     <a href="#" class="more up">Подробнее</a>
                 </div>
             </div>
@@ -65,9 +85,9 @@
                             <div class="media-left">
                                 <i class="sprite sprite-icon_adress media-object"></i>
                             </div>
-                            <div class="media-left">
+                            <div class="media-body">
                                 <p>
-                                Санкт-Петербург,
+                                Санкт-Петербург,<br />
                                 пр. Большевиков д.323, к.1
                                 </p>
                             </div>
@@ -79,8 +99,8 @@
                                 <i class="sprite sprite-icon_clock media-object"></i>
                             </div>
                             <div class="media-body">
-                                <p>Пн–Пт: <strong>09:00 – 21:00</strong></p>
-                                <p>Сб–Вс: <strong>10:00 – 18:00</strong></p>
+                                <p>Пн–Пт: <strong>09:00 – 21:00</strong> <br />
+                                Сб–Вс: <strong>10:00 – 18:00</strong></p>
                             </div>
                         </div>
                     </div>
@@ -93,55 +113,71 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="section_capt">
+                <div class="section_capt center text_white">
                     <h1 class="thin">Наши направления</h1>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">Гинекология</h3>
+                <h3 class="up light cat_title">Гинекология</h3>
+                    </a>
             </div>
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">Урология</h3>
+                <h3 class="up light cat_title">Урология</h3>
+                    </a>
             </div>
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">Педиатрия</h3>
+                <h3 class="up light cat_title">Педиатрия</h3>
+                    </a>
             </div>
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">Эндоскопия</h3>
+                <h3 class="up light cat_title">Эндоскопия</h3>
+                    </a>
             </div>
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">
+                <h3 class="up light cat_title">
                     Эндоскопия
                 </h3>
+                    </a>
             </div>
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">Узи</h3>
+                <h3 class="up light cat_title">Узи</h3>
+                    </a>
             </div>
             <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">Эндокринология</h3>
+                <h3 class="up light cat_title">Эндокринология</h3>
+                    </a>
             </div>
-            <div class="col-md-3">
-                <i class="sprite sprite-icon_plus inline">
+            <div class="col-md-3 cat_item">
+                <a href="#" class="cat_item">
+                <i class="sprite sprite-icon_plus sprite_inline">
                 </i>
-                <h3 class="up light">
+                <h3 class="up light cat_title">
                     Гастроэнтерология
                 </h3>
+                    </a>
             </div>
         </div>
     </div>
@@ -149,23 +185,29 @@
     <div class="text_block">
         <div class="container">
             <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center">
-                    <h2>Многопрофильный медицинский центр «Клиникус»
+                <div class="col-md-10 col-md-offset-1 text-center mar_bot_70">
+                    <h2 class="ultra_light">Многопрофильный медицинский центр «Клиникус»
                     является одним из крупнейших многопрофильных медицинских центров среди
                     платных клиник Санкт-Петербурга.</h2></div>
+                <div class="col-md-1"></div>
             </div>
         </div>
+        <hr  class="decor_line" />
     </div>
     <div class="middle_block background_gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="example_photo">
+                    <div class="example_photo clearfix">
                         <div class="photo top">
-                            <img src="img/doctor_device.jpg" alt="device" />
+                            <a href="img/doctor_device.jpg" class="fancy_image" rel="group">
+                            <img src="img/doctor_device.jpg" alt="device" class="img-responsive" />
+                                </a>
                         </div>
-                        <div class="photo bottom">
-                            <img src="img/hospital_apportament.jpg" alt="apportaments" />
+                        <div class="photo bottom pull-right">
+                            <a href="img/hospital_apportament.jpg" class="fancy_image" rel="group">
+                            <img src="img/hospital_apportament.jpg" alt="apportaments" class="img-responsive" />
+                                </a>
                         </div>
                     </div>
                 </div>
@@ -174,17 +216,17 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="section_capt">
-                                    <h1 class="larg thin">Врачи</h1>
+                                    <h1 class="larg thin no_marg">Врачи</h1>
                                 </div>
                             </div>
                             <div class="col-md-6 clearfix">
-                                <a href="#" class="button base pull-right">Посмотреть всех</a>
+                                <a href="#" class="button base pull-right md">Посмотреть всех</a>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="doctor_cart">
-                                    <div class="photo img_wrapper">
+                                    <div class="photo mar_bot_35">
                                         <img src="img/doctor_1.jpg" alt="doctor" />
                                     </div>
                                     <div class="name">
@@ -192,27 +234,27 @@
                                         <h4 class="regular">Михаил Николаевич</h4>
                                     </div>
                                     <div class="rank">
-                                        <span class="text_gray">Кандидат медицинских наук,врач высшей категории</span>
+                                        <span class="text_gray">Кандидат медицинских наук,<br />врач высшей категории</span>
                                     </div>
 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="doctor_cart">
-                                    <div class="photo img_wrapper">
+                                    <div class="photo mar_bot_35">
                                         <img src="img/doctor_2.jpg" alt="doctor" />
                                     </div>
                                     <div class="name">
                                         <h3 class="regular">Маркович</h3>
                                         <h4 class="regular">Александр Леонидович</h4>
                                     </div>
-                                    <span class="text_gray">Кандидат медицинских наук, врач-хирург высшей
+                                    <span class="text_gray">Кандидат медицинских наук,<br /> врач-хирург высшей<br/>
                                         квалификационной категории. </span>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="doctor_cart">
-                                    <div class="photo img_wrapper">
+                                    <div class="photo mar_bot_35">
                                         <img src="img/doctor_3.jpg" alt="doctor" />
                                     </div>
                                     <div class="name">
@@ -220,14 +262,14 @@
                                         <h4 class="regular">Елена Николаевна</h4>
                                     </div>
                                     <div class="rank">
-                                        <span class="text_gray">Кандидат медицинских наук, хирург первой
+                                        <span class="text_gray">Кандидат медицинских наук,<br /> хирург первой
                                             квалификационной категории </span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="doctor_cart">
-                                    <div class="photo img_wrapper">
+                                    <div class="photo mar_bot_35">
                                         <img src="img/doctor_3.jpg" alt="doctor" />
                                     </div>
                                     <div class="name">
@@ -235,14 +277,14 @@
                                         <h4 class="regular">Михаил Владимирович</h4>
                                     </div>
                                     <div class="rank">
-                                        <span class="text_gray">Доктор медицинских наук,врач высшей категории </span>
+                                        <span class="text_gray">Доктор медицинских наук,<br />врач высшей категории </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>vvv)
+            </div>
         </div>
     </div>
     <div class="base_advantage">
@@ -253,7 +295,7 @@
                         <i class="sprite sprite-icon_pc"></i>
                     </div>
                     <div class="text">
-                        <span class="text_white">
+                        <span class="text_white up medium">
                             новое Современное
                             оборудование
                         </span>
@@ -264,7 +306,7 @@
                         <i class="sprite sprite-icon_house"></i>
                     </div>
                     <div class="text">
-                        <span class="text_white">
+                        <span class="text_white up medium">
                             Все услуги в одной клинике
                             </span>
                     </div>
@@ -274,7 +316,7 @@
                         <i class="sprite sprite-icon_heart"></i>
                     </div>
                     <div class="text">
-                        <span class="text_white">
+                        <span class="text_white up medium">
                             высококвалифицированные
                             и Заботливые врачи
                         </span>
@@ -285,7 +327,7 @@
                         <i class="sprite sprite-icon_baby_car"></i>
                     </div>
                     <div class="text">
-                        <span class="text_white">
+                        <span class="text_white up medium">
                             Медицинские услуги
                             взрослым и детям
                         </span>
@@ -302,13 +344,13 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="section_capt">
-                                    <h1 class="larg thin">
+                                    <h1 class="larg thin no_marg">
                                         Новости
                                     </h1>
                                 </div>
                             </div>
                             <div class="col-md-6 clearfix">
-                                <a href="#" class="pull_right button base">Посмотреть все</a>
+                                <a href="#" class="pull_right button base md">Посмотреть все</a>
                             </div>
                         </div>
                         <div class="row">
@@ -317,22 +359,22 @@
                                     <div class="date">
                                         <div class="media">
                                             <div class="media-left">
-                                                <h1 class="larg thin media-object">
+                                                <h1 class="larg thin media-object no_marg">
                                                     28
                                                 </h1>
                                             </div>
                                             <div class="media-body">
-                                                <p class="up">Ареля</p>
-                                                <h3 class="text_gray">2016</h3>
+                                                <p class="up no_marg">Ареля</p>
+                                                <h3 class="text_gray no_marg">2016</h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="title">
-                                        <p>
+                                        <p class="medium">
                                             Дополнительная ответственность для строителей жилья
                                         </p>
                                     </div>
-                                    <hr />
+                                    <hr  class="decor_line xs" />
                                     <div class="content">
                                         <p>Сообразно рекомендациям комитета Госдумы по части финансового рынка,
                                             нижней палате следует утвердить законопроект в первом чтении. </p>
@@ -344,22 +386,22 @@
                                     <div class="date">
                                         <div class="media">
                                             <div class="media-left">
-                                                <h1 class="larg thin media-object">
+                                                <h1 class="larg thin media-object no_marg">
                                                     28
                                                 </h1>
                                             </div>
                                             <div class="media-body">
-                                                <p class="up">Ареля</p>
-                                                <h3 class="text_gray">2016</h3>
+                                                <p class="up no_marg">Ареля</p>
+                                                <h3 class="text_gray no_marg">2016</h3>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="title">
-                                        <p>
+                                        <p class="medium">
                                             Дополнительная ответственность для строителей жилья
                                         </p>
                                     </div>
-                                    <hr />
+                                    <hr class="decor_line xs" />
                                     <div class="content">
                                         <p>Сообразно рекомендациям комитета Госдумы по части финансового рынка,
                                             нижней палате следует утвердить законопроект в первом чтении. </p>
@@ -375,7 +417,7 @@
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="content">
-                                        <div class="text">
+                                        <div class="text mar_bot_35">
                                             <p class="text_white">Предмет деятельности, как следует
                                                 из вышесказанного, создает закон исключённого третьего.
                                                 Закон внешнего мира, следовательно, выводит язык образов. Дедуктивный
@@ -384,7 +426,7 @@
                                                 По своим философским взглядам Дезами
                                                 был материалистом.</p>
                                         </div>
-                                        <div class="user_avatar">
+                                        <div class="user_avatar mar_bot_35">
                                             <img src="img/review_man.png" alt="petrov" />
                                         </div>
                                         <div class="user_name">
@@ -394,7 +436,7 @@
                                 </div>
                                 <div class="item">
                                     <div class="content">
-                                        <div class="text">
+                                        <div class="text mar_bot_35">
                                             <p class="text_white">Предмет деятельности, как следует
                                                 из вышесказанного, создает закон исключённого третьего.
                                                 Закон внешнего мира, следовательно, выводит язык образов. Дедуктивный
@@ -403,7 +445,7 @@
                                                 По своим философским взглядам Дезами
                                                 был материалистом.</p>
                                         </div>
-                                        <div class="user_avatar">
+                                        <div class="user_avatar mar_bot_35">
                                             <img src="img/review_man.png" alt="petrov" />
                                         </div>
                                         <div class="user_name">
@@ -411,9 +453,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="item active">
+                                <div class="item">
                                     <div class="content">
-                                        <div class="text">
+                                        <div class="text mar_bot_35">
                                             <p class="text_white">Предмет деятельности, как следует
                                                 из вышесказанного, создает закон исключённого третьего.
                                                 Закон внешнего мира, следовательно, выводит язык образов. Дедуктивный
@@ -422,7 +464,7 @@
                                                 По своим философским взглядам Дезами
                                                 был материалистом.</p>
                                         </div>
-                                        <div class="user_avatar">
+                                        <div class="user_avatar mar_bot_35">
                                             <img src="img/review_man.png" alt="petrov" />
                                         </div>
                                         <div class="user_name">
@@ -435,7 +477,7 @@
                                 <i class="sprite sprite-icon_arrow_left"></i>
                             </a>
                             <a href="#reviewsCarousel" class="carousel-control right" data-slide="next">
-                                <i class="sprite sprite-icon_arrow_left"></i>
+                                <i class="sprite sprite-icon_angle_arrow_right"></i>
                             </a>
                         </div>
                     </div>
@@ -446,8 +488,11 @@
                     <div class="map_container">
                         <div class="container-fluid">
                             <div class="row">
+                                <div class="col-md-12">
+                                    <div id="map"></div>
+                                </div>
                                 <div class="col-md-6">
-                                    <div class="overlay_contact_block contacts">
+                                    <div class="overlay_contact_block contacts text_white">
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="adress">
@@ -455,13 +500,14 @@
                                                         <div class="media-left">
                                                             <i class="sprite sprite-icon_adress media-object"></i>
                                                         </div>
-                                                        <div class="media-left">
+                                                        <div class="media-body">
                                                             <p>
                                                                 Санкт-Петербург,
                                                                 пр. Большевиков д.323, к.1
                                                             </p>
                                                         </div>
                                                     </div>
+                                                </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                 <div class="work_time">
@@ -482,15 +528,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
     <div class="order_row">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <form class="inline_form">
+                <div class="col-md-8 col-md-offset-2">
+                    <form class="inline_form circle">
                         <input type="text" name="name" placeholder="Имя" />
                         <input type="text" name="phone" placeholder="Телефон" />
-                        <input type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ" class="button red medium" />
+                        <input type="submit" value="ЗАПИСАТЬСЯ НА ПРИЕМ" class="button second_base_color lg medium" />
                     </form>
                 </div>
             </div>
@@ -538,5 +583,9 @@
             </div>
         </div>
     </footer>
+<script src="js/script.js"></script>
+<script src="js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7wYZn36Y2XGUlY7Y_tlq67p_5JitUj2c&callback=initMap">
+</script>
 </body>
 </html>

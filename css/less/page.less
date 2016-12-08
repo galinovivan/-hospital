@@ -1,0 +1,166 @@
+.main_cover {
+  padding-top: 130px;
+  background: url('../img/main_cover.jpg') no-repeat center center;
+  .cover_content {
+    p {
+      line-height: 1;
+    }
+    .more {
+      display: inline-block;
+      margin-top: 70px;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 95px;
+        height: 2px;
+        background: @second_base_color;
+        vertical-align: middle;
+        margin-right: 30px;
+      }
+    }
+  }
+  .contacts {
+    margin-top: 120px;
+    .media {
+      margin-bottom: 45px;
+      .media-left {
+        width: 80px;
+      }
+      .media-body {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+.base_categories {
+  padding-top: 105px;
+  background: url('../img/figure.png') no-repeat;
+  height: 600px;
+  .cat_item {
+    padding-bottom: 30px;
+    display: block;
+    color: @white;
+    .cat_title {
+      display: inline-block;
+    }
+  }
+  .section_capt {
+    margin-bottom: 60px;
+  }
+}
+
+.text_block {
+  .text-center {
+    padding: 0 2.5%;
+  }
+  h2 {
+    line-height: 1.7;
+  }
+}
+.middle_block {
+  .example_photo {
+    padding-right: 10%;
+    padding-top: 170px;
+    .photo {
+      &.top {
+        margin-bottom: 80px;
+        border: 20px solid @white;
+      }
+      &.bottom {
+        width: 50%;
+        border: 15px solid @white;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .doctor_catalog {
+    padding-top: 75px;
+    .button {
+      margin-bottom: 60px;
+    }
+    .doctor_cart {
+      margin-bottom: 70px;
+      .rank {
+        max-width: 200px;
+      }
+    }
+  }
+}
+.bottom_block {
+  @height: 645px;
+  .news_widget {
+    height: @height;
+    padding: 125px 0 125px 100px;
+    .button {
+      margin-bottom: 60px;
+    }
+    .news {
+      max-width: 315px;
+      hr {
+        margin-right: 0;
+        margin-left: 0;
+      }
+      .media-body {
+        vertical-align: middle;
+      }
+    }
+  }
+  .review_widget {
+    height: @height;
+    background: @base_color;
+    position: relative;
+    padding: 130px 180px 0 180px;
+    .carousel {
+      .align();
+      .carousel-control {
+        @control_offset: -100px;
+        &.left {
+          left: @control_offset;
+        }
+        &.right {
+          right: @control_offset;
+        }
+      }
+    }
+    &::before {
+      content: '';
+      width: 65px;
+      height: 50px;
+      background: url('../img/char.png') no-repeat;
+      margin-bottom: 50px;
+      .margin_align();
+    }
+  }
+}
+.map_container {
+  position: relative;
+  z-index: 1;
+  #map {
+    height: @map_height;
+    z-index: 1;
+  }
+  .overlay_contact_block {
+    width: 100%;
+    padding: 65px 0;
+    padding-left: 10%;
+    height: 200px;
+    background: @overlay_black;
+    position: absolute;
+    left: 0;
+    top: -710px;
+    z-index: 10;
+    .media {
+      .media-body {
+        max-width: 200px;
+      }
+    }
+  }
+}
+
+.order_row {
+  padding: 125px;
+  background: @base_color;
+}

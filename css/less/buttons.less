@@ -1,0 +1,55 @@
+@xs_btn: 130px;
+@md_btn: 170px;
+@lg_btn: 290px;
+@full_btn: 100%;
+
+.make_smooth_btn(@width) {
+  width: @width;
+  .radius(@width / 2);
+}
+
+.button {
+  display: inline-block;
+  padding: 9px 0;
+  text-transform: uppercase;
+  color: @white;
+  border: none;
+  .transition();
+  .align();
+  &:hover {
+    text-decoration: none;
+  }
+  &.xs {
+    .make_smooth_btn(@xs_btn);
+  }
+  &.md {
+    .make_smooth_btn(@md_btn);
+  }
+  &.lg {
+    .make_smooth_btn(@lg_btn);
+    padding: 11px 0;
+  }
+  &.full {
+    width: @full_btn;
+  }
+  &.base {
+    color: @second_base_color;
+    border: 1px solid @second_base_color;
+    .fill_hover();
+  }
+  &.color_base {
+    background: @base_color;
+  }
+  &.second_base_color {
+    background: @second_base_color;
+    .shadow_hover(@base_shadow);
+  }
+  &.with_shadow {
+    font-family: @medium_font;
+      .shadow(@base_shadow);
+    &:hover {
+      .shadow(0 4px 10px 0px darken(@base_color, 3%));
+      color: @white;
+    }
+  }
+}
